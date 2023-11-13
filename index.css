@@ -1,6 +1,8 @@
 :root {
-	--background_color: #fff;
-	--text_primaray_color: #080808;
+	--background_color_primary: #ffffff;
+	--background_color_secondary: #b8e7ff;
+	--text_color_primary: #000837;
+	--text_color_secondary: #0073ff;
 }
 
 * {
@@ -14,6 +16,18 @@ html {
 }
 
 body {
-	background-color: var(--background_color);
+	background-color: var(--background_color_primary);
 	color: var(--text_primaray_color);
+	width: 100%;
+	overflow-x: hidden;
+}
+
+header {
+	background-color: var(--background_color_primary);
+	width: 100%;
+	height: 75px;
+}
+
+main {
+	background-color: var(--background_color_secondary);
 }
