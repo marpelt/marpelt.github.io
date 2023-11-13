@@ -35,3 +35,24 @@ main {
 	left: 50%;
 	transform: translateX(-50%);
 }
+
+section#top {
+	width: 100%;
+	height: 850px;
+}
+
+section#top div.grid-container {
+	display: grid;
+	grid-template-columns: calc(100% - 850px) 850px;
+	gap: 0;
+}
+
+section#top div.grid-container div#row1 {
+	width: 100%;
+	height: 100%;
+}
+
+section#top div.grid-container div#row2 {
+	width: 100%;
+	height: 100%;
+}
