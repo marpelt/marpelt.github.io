@@ -30,5 +30,8 @@ header {
 
 main {
 	background-color: var(--background_color_secondary);
-	width: 100%;
+	width: 90%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
