@@ -16,7 +16,7 @@ html {
 }
 
 body {
-	background-color: var(--background_color_primary);
+	background-color: var(--background_color_secondary);
 	color: var(--text_primaray_color);
 	width: 100%;
 	overflow-x: hidden;
@@ -42,6 +42,8 @@ section#top {
 }
 
 section#top div.grid-container {
+	width: 100%;
+	height: 100%;
 	display: grid;
 	grid-template-columns: calc(100% - 850px) 850px;
 	gap: 0;
