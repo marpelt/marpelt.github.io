@@ -121,8 +121,7 @@ section#top div.grid-container {
 	width: 100%;
 	height: 100%;
 	display: grid;
-	grid-template-columns: 65% 30%;
-	gap: 5%;
+	grid-template-columns: 60% 40%;
 }
 
 section#top div.grid-container div#row1 {
