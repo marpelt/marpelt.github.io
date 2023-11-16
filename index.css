@@ -2,10 +2,11 @@
 
 :root {
 	--background_color_primary: #ffffff;
-	--background_color_secondary: #b8e7ff;
-	--text_color_primary: #000837;
+	--background_color_secondary: rgb(184, 231, 255);
+	--text_primary_color: #000837;
 	--text_color_secondary: #0073ff;
-	--shadow-color: rgba(0, 0, 0, 0.2);
+	--shadow_color_black: rgba(0, 0, 0, 0.5);
+	--shadow_color_blue_light: rgba(184, 231, 255, 0.75);
 }
 
 * {
@@ -21,7 +22,7 @@ html {
 
 body {
 	background-color: var(--background_color_primary);
-	color: var(--text_primaray_color);
+	color: var(--text_primary_color);
 	width: 100%;
 	overflow-x: hidden;
 	display: flex;
@@ -38,11 +39,11 @@ body {
 .btn {
 	display: inline-block;
 	padding: 10px 10px;
-	background: var(--background_color_secondary);
+	background-color: var(--background_color_secondary);
 	border-radius: 10px;
-	box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+	box-shadow: 0 0.2rem 0.5rem var(--shadow_color_black);
 	font-size: 20px;
-	color: var(----text_color_primary);
+	color: var(--text_primary_color);
 	letter-spacing: 1px;
 	font-weight: 600;
 	border: 2px solid transparent;
@@ -176,4 +177,10 @@ section#top div.grid-container div#row2 {
 section#top div.grid-container div#row2 img {
 	width: 525px;
 	height: 525px;
+	border-radius: 100%;
+	transition: 0.5s ease;
+}
+
+section#top:hover > div.grid-container div#row2 img {
+	box-shadow: 0 0 100px 25px var(--shadow_color_blue_light);
 }
