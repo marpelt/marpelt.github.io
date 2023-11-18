@@ -4,10 +4,12 @@
 :root {
 	--background_color_primary: #ffffff;
 	--background_color_secondary: rgb(184, 231, 255);
-	--text_primary_color: #000837;
+	--background_color_blue_light: rgba(184, 231, 255, 0.5);
+	--text_primary_color: rgb(0, 8, 56)
 	--text_color_secondary: #0073ff;
 	--shadow_color_black: rgba(0, 0, 0, 0.5);
 	--shadow_color_blue_light: rgba(184, 231, 255, 0.75);
+	--shadow_color_blue_dark: rgba(0, 8, 56, 0.75);
 }
 
 * {
@@ -16,6 +18,7 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 	color: var(--text_primary_color);
+	user-select: none;
 }
 
 html {
@@ -45,6 +48,7 @@ body {
 	background-color: var(--background_color_secondary);
 	border-radius: 10px;
 	box-shadow: 0 0.2rem 0.5rem var(--shadow_color_black);
+	text-decoration: none;
 	font-size: 20px;
 	color: var(--text_primary_color);
 	letter-spacing: 1px;
@@ -250,5 +254,99 @@ section#about div.grid-container div.row2 div p {
 }
 
 section#experience {
-	height: 1000px;
+	height: 500px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+section#experience div.content {
+	width: 100%;
+	height: 100%;
+}
+
+section#experience div.content h3 {
+	font-size: 35px;
+}
+
+section#experience div.content div.grid-container {
+	width: 90%;
+	display: flex;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section#experience div.content div.grid-container div.wrapper {
+	width: 350px;
+	height: 350px;
+	border: #000837 3px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: 0.5s ease;
+}
+
+section#experience div.content div.grid-container div.wrapper:hover {
+	box-shadow: 0 0 25px 5px var(--shadow_color_blue_dark);
+}
+
+section#experience div.content div.grid-container img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+section#experience div.content div.grid-container div.wrapper div {
+	width: 100%;
+	height: 70%;
+	position: absolute;
+	top: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background_color_blue_light);
+}
+
+section#experience div.content div.grid-container div.wrapper div h5 {
+	font-size: 25px;
+	position: absolute;
+	top: 15px;
+}
+
+section#experience div.content div.grid-container div.wrapper div p {
+	position: absolute;
+	top: 60px;
+	width: 90%;
+	font-size: 17px;
+	text-align: center;
+}
+
+section#experience div.content div.grid-container div.wrapper div a {
+	position: absolute;
+	bottom: 15px;
+	padding: 5px 5px;
+	font-size: 17px;
+}
+
+section#experience div.content div.grid-container div.wrapper div a:hover {
+	background: var(--background_color_primary);
+}
+
+footer {
+	width: 100%;
+	height: 60px;
+	margin-top: 25px;
+	background-color: var(--background_color_secondary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 500;
 }
