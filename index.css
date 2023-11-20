@@ -339,6 +339,97 @@ section#experience div.content div.grid-container div.wrapper div a:hover {
 	background: var(--background_color_primary);
 }
 
+section#projects {
+	width: 100%;
+	height: 950px;
+	display: flex;
+	flex-direction: column;
+}
+
+section#projects div.content {
+	width: 90%;
+	height: 100%;
+}
+
+section#projects div.content div.container {
+	width: 100%;
+	height: 50%;
+}
+
+section#projects div.content div.container h3 {
+	font-size: 35px;
+}
+
+section#projects div.content div.grid-container {
+	width: 90%;
+	display: flex;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section#projects div.content div.grid-container div.wrapper {
+	width: 350px;
+	height: 350px;
+	border: #000837 3px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: 0.5s ease;
+}
+
+section#projects div.content div.grid-container div.wrapper:hover {
+	box-shadow: 0 0 25px 5px var(--shadow_color_blue_dark);
+}
+
+section#projects div.content div.grid-container img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+section#projects div.content div.grid-container div.wrapper div {
+	width: 100%;
+	height: 70%;
+	position: absolute;
+	top: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background_color_blue_light);
+}
+
+section#projects div.content div.grid-container div.wrapper div h5 {
+	font-size: 25px;
+	position: absolute;
+	top: 15px;
+}
+
+section#projects div.content div.grid-container div.wrapper div p {
+	position: absolute;
+	top: 60px;
+	width: 90%;
+	font-size: 17px;
+	text-align: center;
+}
+
+section#projects div.content div.grid-container div.wrapper div a {
+	position: absolute;
+	bottom: 15px;
+	padding: 5px 5px;
+	font-size: 17px;
+}
+
+section#projects div.content div.grid-container div.wrapper div a:hover {
+	background: var(--background_color_primary);
+}
+
 footer {
 	width: 100%;
 	height: 60px;
