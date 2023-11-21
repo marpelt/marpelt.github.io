@@ -39,7 +39,7 @@ body {
 .spacing {
 	width: 85%;
 	color: var(--text_primary_color);
-	margin: 25px 0 25px 0;
+	margin: 75px 0 75px 0;
 }
 
 .btn {
@@ -125,8 +125,9 @@ main {
 
 section#top {
 	width: 100%;
-	height: 750px;
+	height: 100%;
 	background-color: var(--background_color_primary);
+	margin-top: 25px;
 }
 
 section#top div.grid-container {
@@ -198,7 +199,7 @@ section#top:hover > div.grid-container div.row2 img {
 
 section#about {
 	width: 100%;
-	height: 300px;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -341,7 +342,7 @@ section#experience div.content div.grid-container div.wrapper div a:hover {
 
 section#projects {
 	width: 100%;
-	height: 950px;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -356,18 +357,25 @@ section#projects div.content div.container {
 	height: 50%;
 }
 
+section#projects div.content div.container#secondContainer {
+	padding-top: 25px;
+}
+
 section#projects div.content div.container h3 {
 	font-size: 35px;
+
 }
 
 section#projects div.content div.grid-container {
 	width: 90%;
-	display: flex;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
 	margin-top: 30px;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 350px 350px 350px 350px;
+	column-gap: 25px;
+	row-gap: 25px;
 	align-items: center;
 }
 
@@ -428,6 +436,27 @@ section#projects div.content div.grid-container div.wrapper div a {
 
 section#projects div.content div.grid-container div.wrapper div a:hover {
 	background: var(--background_color_primary);
+}
+
+section#testimonials {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+section#testimonials div.content {
+	width: 90%;
+	height: 100%;
+}
+
+section#testimonials div.content div.container {
+	width: 100%;
+	height: 50%;
+}
+
+section#testimonials div.content div.container h3 {
+	font-size: 35px;
 }
 
 footer {

@@ -5,6 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="res/profileImg.png" />
 		<link rel="stylesheet" href="index.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+		/>
 		<title>Portfolio - Markus Peltsarszky</title>
 	</head>
 	<body>
@@ -15,9 +19,9 @@
 				</div>
 				<div id="tabs_header">
 					<!--NavBar-->
-					<nav>
+					<nav class="navbar">
 						<ul>
-							<li><a href="#top">Home</a></li>
+							<li><a href="#">Home</a></li>
 							<li><a href="#spacing1">About</a></li>
 							<li><a href="#spacing2">Experience</a></li>
 							<li><a href="#spacing3">Projects</a></li>
@@ -29,7 +33,7 @@
 			</div>
 		</header>
 
-		<main>
+		<main id="main">
 			<section id="top">
 				<div class="grid-container">
 					<div class="grid-item row1">
@@ -69,7 +73,7 @@
 								totam reprehenderit quas molestias maxime reiciendis eveniet
 								praesentium, id pariatur, nobis illum distinctio voluptatum
 								aperiam quisquam incidunt sequi, est doloribus excepturi. Maxime
-								architecto id repellendus repellat alias!
+								architecto id repellendus repellat alias! <span>age</span>
 							</p>
 						</div>
 					</div>
@@ -140,7 +144,7 @@
 						<h3>Current Projects</h3>
 						<div class="grid-container">
 							<div class="wrapper item-1">
-								<img src="#" alt="" />
+								<img src="res/cjt-robotics-GUI_Img_Background.png" alt="" />
 								<div>
 									<h5>GUI ⦁ CJT-Robotics</h5>
 									<p>
@@ -153,9 +157,23 @@
 									>
 								</div>
 							</div>
+							<div class="wrapper item-2">
+								<img src="res/portfolio_Img_Background.png" alt="" />
+								<div>
+									<h5>Portfolio Website</h5>
+									<p>
+										A portfolio website that shows the skills and projects.
+									</p>
+									<a
+										href="https://github.com/marpelt/marpelt.github.io"
+										class="btn"
+										>GitHub ⦁ Source Folder</a
+									>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="container">
+					<div class="container" id="secondContainer">
 						<h3>Latest Projects</h3>
 						<div class="grid-container">
 							<div class="wrapper item-1">
@@ -176,7 +194,16 @@
 				</div>
 			</section>
 			<hr class="spacing" id="spacing4" />
-			<section id="testimonials"></section>
+			<section id="testimonials">
+				<div class="content">
+					<div class="container">
+						<h3>Testimonials</h3>
+						<div class="wrapper">
+
+						</div>
+					</div>
+				</div>
+			</section>
 			<hr class="spacing" id="spacing5" />
 			<section id="socials"></section>
 		</main>
@@ -185,4 +212,8 @@
 			<p>&copy Copyright ⦁ Markus Peltsarszky ⦁ 2023</p>
 		</footer>
 	</body>
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="index.js"></script>
 </html>
