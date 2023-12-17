@@ -8,7 +8,7 @@ ScrollReveal({
 
 ScrollReveal().reveal('.welcome-content, .heading', { origin: 'top' });
 ScrollReveal().reveal(
-	'.home-img img, .service-container, .portfolio-box, .testimonial-wrapper, .contact form',
+	'.home-img img, .service-container, .portfolio-box',
 	{ origin: 'bottom' }
 );
 ScrollReveal().reveal('.welcome-content h1, #about .grid-container .grid-item h3, #experience .content h3, #projects .content .container h3, #testimonials .content .container h3', { origin: 'left' });
@@ -23,17 +23,17 @@ let ageText = document.querySelector('#about .grid-container .grid-item div p sp
 ageText.replaceWith(age);
 
 // --- Swiper ---
-// var swiper = new Swiper('.mySwiper', {
-// 	slidesPerView: 1,
-// 	spaceBetween: 50,
-// 	loop: true,
-// 	grabCursor: true,
-// 	pagination: {
-// 		el: '.swiper-pagination',
-// 		clickable: true,
-// 	},
-// 	navigation: {
-// 		nextEl: '.swiper-button-next',
-// 		prevEl: '.swiper-button-prev',
-// 	},
-// });
+var swiper = new Swiper('.mySwiper', {
+	slidesPerView: 1,
+	spaceBetween: 50,
+	loop: true,
+	grabCursor: true,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
