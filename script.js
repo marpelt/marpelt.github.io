@@ -75,7 +75,7 @@ function checkLanguage() {
       document.querySelectorAll('.lang-de').forEach(el => {
          el.style.display = 'block';
       });
-      langText.textContent = 'DE'; // Korrektur: Sollte 'DE' sein, da wir jetzt Deutsch anzeigen
+      langText.textContent = 'DE';
    } else {
       document.querySelectorAll('.lang-en').forEach(el => {
          el.style.display = 'block';
@@ -83,7 +83,7 @@ function checkLanguage() {
       document.querySelectorAll('.lang-de').forEach(el => {
          el.style.display = 'none';
       });
-      langText.textContent = 'EN'; // Korrektur: Sollte 'EN' sein, da wir jetzt Englisch anzeigen
+      langText.textContent = 'EN';
    }
 }
 
@@ -164,7 +164,7 @@ function addProtectedEmail() {
    a.href = `mailto:${email}`;
    a.textContent = 'Email';
 
-   // Verzögert einfügen (zusätzliche Bot-Hürde)
+   // Verzögert einfügen
    setTimeout(() => {
       el.appendChild(a);
    }, Math.random() * 500 + 300); // 300–800 ms Verzögerung
