@@ -1,233 +1,731 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="res/profileImg.png" />
-		<link rel="stylesheet" href="index.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-		/>
-		<title>Portfolio - Markus Peltsarszky</title>
-	</head>
-	<body>
-		<header>
-			<div>
-				<div id="logo_header">
-					<p>Portfolio</p>
-				</div>
-				<div id="tabs_header">
-					<!--NavBar-->
-					<nav class="navbar">
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#spacing1">About</a></li>
-							<li><a href="#spacing2">Experience</a></li>
-							<li><a href="#spacing3">Projects</a></li>
-							<li><a href="#spacing4">Testimonials</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markus Peltsarszky | Portfolio</title>
+    <link rel="icon" href="res/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+    <div class="bg-circle circle-3"></div>
 
-		<main id="main">
-			<section id="top">
-				<div class="grid-container">
-					<div class="grid-item row1">
-						<div class="welcome-content">
-							<h3>Greetings, I am</h3>
-							<h1>Markus</h1>
-							<p>
-								I look forward to supporting you with my many years of
-								experience and fulfilling your wishes!
-							</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">
+                    <span class="logo-text">Portfolio</span>
+                </a>
+                
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
 
-							<a href="#spacing3" class="btn">Recent Projects</a>
-						</div>
-					</div>
-					<div class="grid-item row2">
-						<img src="res/profileImg.png" alt="#" />
-					</div>
-				</div>
-			</section>
-			<hr class="spacing" id="spacing1" />
-			<section id="about">
-				<div class="grid-container">
-					<div class="grid-item row1">
-						<img src="res/profileImg.png" alt="#" />
-					</div>
-					<div class="grid-item row2">
-						<div>
-							<h3>About me</h3>
-							<h4>Hi, I am Markus Peltsarszky</h4>
-							<p>
-								Since the age of 10, I've been deeply immersed in the world of programming, and now, at the age of <span>age</span>, I apply the experience I've gained to various projects. My expertise lies in web development, where I proficiently use HTML, CSS, and JavaScript to create dynamic and visually appealing websites. I extend my programming skills to Java for app development and actively contribute to the coding community by developing plugins for Minecraft servers. In addition, I hold a role as a programmer at CJT-Robotics. Here, I focus on developing applications for mobile robotics, specifically in the field of Rescue Robotics. My commitment to coding extends beyond personal projects, demonstrating a pragmatic approach to problem-solving and technical innovation.
-						</div>
-					</div>
-				</div>
-			</section>
-			<hr class="spacing" id="spacing2" />
-			<section id="experience">
-				<div class="content">
-					<h3>My Experience</h3>
-					<div class="grid-container">
-						<div class="wrapper item-1">
-							<img src="res/webDevelopment_Img_Background.png" alt="" />
-							<div>
-								<h5>WebDevelopment</h5>
-								<p>
-									I create modern and exclusive looking websites with HTML5,
-									CSS3 and JavaScript.<br />Let me inspire you.
-								</p>
-								<a
-									href="https://github.com/search?q=owner%3Amarpelt+language%3AHTML+language%3ACSS+&type=repositories" target="_blank"
-									class="btn"
-									>GitHub ⦁ marpelt</a
-								>
-							</div>
-						</div>
-						<div class="wrapper item-2">
-							<img src="res/java_Img_Background.png" alt="" />
-							<div>
-								<h5>Java</h5>
-								<p>
-									I create different Java applications for different needs (Java 1.8 - Java 17). Just watch my latest Java Project on GitHub.
-								</p>
-								<a href="https://github.com/search?q=owner%3Amarpelt+language%3AJava+&type=repositories" class="btn">GitHub ⦁ marpelt</a>
-							</div>
-						</div>
-						<div class="wrapper item-3">
-							<img src="res/cjt-robotics_Img_Background.png" alt="" />
-							<div>
-								<h5>C++</h5>
-								<p>
-									As a software developer for the CJT-Robotics team, I write
-									various applications in C++ for use with ROS.
-								</p>
-								<a href="https://github.com/CJT-Robotics" target="_blank" class="btn"
-									>GitHub ⦁ CJT-Robotics</a
-								>
-							</div>
-						</div>
-						<div class="wrapper item-4">
-							<img src="res/minecraft_Img_Background.png" alt="" />
-							<div>
-								<h5>Minecraft Plugins</h5>
-								<p>
-									I program plug-ins for Minecraft servers and mods for Minecraft clients. I attach great importance to the adaptability of the plugins
-								</p>
-								<a href="https://github.com/search?q=owner%3Amarpelt+topic%3Aminecraft&type=repositories" class="btn">GitHub ⦁ marpelt</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<hr class="spacing" id="spacing3" />
-			<section id="projects">
-				<div class="content">
-					<div class="container">
-						<h3>Current Projects</h3>
-						<div class="grid-container">
-							<div class="wrapper item-1">
-								<img src="res/cjt-robotics-GUI_Img_Background.png" alt="" />
-								<div>
-									<h5>GUI ⦁ CJT-Robotics</h5>
-									<p>
-										This gui is used to view and interactively use all important data and information about the robot and the control unit.
-									</p>
-									<a
-										href="https://github.com/CJT-Robotics/gui"
-										class="btn"
-										>GitHub ⦁ Source Folder</a
-									>
-								</div>
-							</div>
-							<div class="wrapper item-2">
-								<img src="res/portfolio_Img_Background.png" alt="" />
-								<div>
-									<h5>Portfolio Website</h5>
-									<p>
-										A portfolio website that shows the skills and projects.
-									</p>
-									<a
-										href="https://github.com/marpelt/marpelt.github.io"
-										class="btn"
-										>GitHub ⦁ Source Folder</a
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="container" id="secondContainer">
-						<h3>Latest Projects</h3>
-						<div class="grid-container">
-							<div class="wrapper item-1">
-								<img src="res/converter_Img_Background.png" alt="" />
-								<div>
-									<h5>Number Converter</h5>
-									<p>
-										This is just a little application to convert numbers from one format to another one. (Binary, Decima, Hexadecimal and ASCII supported)
-									</p>
-									<a
-										href="https://github.com/marpelt/NumberConverter"
-										class="btn"
-										>GitHub ⦁ Source Folder</a
-									>
-								</div>
-							</div>
-							<div class="wrapper item-2">
-								<img src="res/cjt-robotics-website_Img_Background.png" alt="" />
-								<div>
-									<h5>CJT-Robotics Website</h5>
-									<p>
-										The official website of the CJT-Robotics Team.
-									</p>
-									<a
-										href="https://github.com/CJT-Robotics/CJT-Robotics.github.io"
-										class="btn"
-										>GitHub ⦁ Source Folder</a
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-			</section>
-			<hr class="spacing" id="spacing4" />
-			<section id="testimonials">
-				<div class="content">
-					<div class="container">
-						<h3>Testimonials</h3>
-						<div class="wrapper">
-							<div class="testimonial-container" id="testimonial-container">
-								<div class="testimonial-wrapper">
-									<div class="testimonial-box mySwiper">
-										<div class="testimonial-content swiper-wrapper">
-											<div class="testimonial-slide swiper-slide">
-												<img src="res/profileImg.png" />
-												<h4>Markus Peltsarszky</h4>
-												<p>There are no Testimonials</p>
-											</div>
-										</div>
-										<div class="swiper-button-next"></div>
-										<div class="swiper-button-prev"></div>
-										<div class="swiper-pagination"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
+                <div class="header-actions">
+                    <button id="lang-toggle" class="action-btn" aria-label="Toggle language">
+                        <span class="lang-text">DE</span>
+                    </button>
+                    <button id="theme-toggle" class="action-btn" aria-label="Toggle theme">
+                        <i class="fas fa-moon theme-icon"></i>
+                    </button>
+                    <button id="menu-toggle" class="action-btn menu-toggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-		<footer>
-			<p>&copy Copyright ⦁ Markus Peltsarszky ⦁ 2023</p>
-		</footer>
-	</body>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line lang-en">Innovating with</span>
+                        <span class="title-line lang-de" style="display:none">Innovation durch</span>
+                        <span class="title-line highlight lang-en">Experience</span>
+                        <span class="title-line highlight lang-de" style="display:none">Erfahrung</span>
+                    </h1>
+                    <p class="hero-subtitle lang-en">Building intelligent systems that bridge the digital and physical worlds</p>
+                    <p class="hero-subtitle lang-de" style="display:none">Entwicklung intelligenter Systeme, die die digitale und physische Welt verbinden</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary lang-en">
+                            <span>View Projects</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-primary lang-de" style="display:none">
+                            <span>Projekte ansehen</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary lang-en">
+                            <span>Contact Me</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary lang-de" style="display:none">
+                            <span>Kontakt</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="res/favicon.png" alt="Martin Pelt working on robotics project">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<script src="https://unpkg.com/scrollreveal"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-	<script src="index.js"></script>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title lang-en">About Me</h2>
+                <h2 class="section-title lang-de" style="display:none">Über Mich</h2>
+                <p class="section-subtitle lang-en">Get to know the person behind the code</p>
+                <p class="section-subtitle lang-de" style="display:none">Lernen Sie den Menschen hinter dem Code kennen</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="res/favicon.png" alt="Martin Pelt portrait">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-title lang-en">Hi, I am Markus Peltsarszky</h3>
+                    <h3 class="about-title lang-de" style="display:none">Servus, ich bin Markus Peltsarszky</h3>
+                    <div class="about-description">
+                        <p class="lang-en">I've been passionate about software development since I was ten years old – today, I code with both enthusiasm and experience. My main focus lies in web development, mobile rescue robotics, and creating Minecraft modifications. I combine creativity with technical expertise to develop innovative solutions – whether in the browser, on the field, or in the game.</p>
+                        <p class="lang-de" style="display:none">Schon seit ich zehn Jahre alt bin, begeistert mich Softwareentwicklung – heute programmiere ich mit Leidenschaft und Erfahrung. Mein Schwerpunkt liegt in der Webentwicklung, der Entwicklung für mobile Einsatzrobotik, sowie in der Erstellung von Minecraft-Modifikationen. Dabei kombiniere ich Kreativität mit technischem Know-how, um innovative Lösungen zu entwickeln – ob im Browser, auf dem Spielfeld oder im Spiel.</p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    <h4 class="lang-en">Image Processing</h4>
+                                    <h4 class="lang-de" style="display:none">Bildverarbeitung</h4>
+                                    <p class="lang-en">Experience in the field of image processing in connection with mobile application robotics</p>
+                                    <p class="lang-de" style="display:none">Erfahrung im Bereich der Bildverarbeitung in Verbindung mit mobiler Einsatzrobotik</p>
+                                </div>
+                            </div>
+
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    <h4 class="lang-en">Hardware Integration</h4>
+                                    <h4 class="lang-de" style="display:none">Hardware Integration</h4>
+                                    <p class="lang-en">Expertise in connecting software systems with physical hardware components</p>
+                                    <p class="lang-de" style="display:none">Erfahrung in der Verbindung von Softwaresystemen mit physischen Hardwarekomponenten</p>
+                                </div>
+                            </div>
+
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    <h4 class="lang-en">AI Solutions</h4>
+                                    <h4 class="lang-de" style="display:none">KI Lösungen</h4>
+                                    <p class="lang-en">Developing machine learning models for real-world applications</p>
+                                    <p class="lang-de" style="display:none">Entwicklung von Machine-Learning-Modellen für reale Anwendungen</p>
+                                </div>
+                            </div>
+
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    <h4 class="lang-en">Network Administration</h4>
+                                    <h4 class="lang-de" style="display:none">Netzwerkadministration</h4>
+                                    <p class="lang-en">Setup and maintenance of various network solutions</p>
+                                    <p class="lang-de" style="display:none">Aufbau und Wartung verschiedener Netzwerklösungen</p>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title lang-en">Technical Skills</h2>
+                <h2 class="section-title lang-de" style="display:none">Technische Fähigkeiten</h2>
+                <p class="section-subtitle lang-en">Tools and technologies I work with</p>
+                <p class="section-subtitle lang-de" style="display:none">Werkzeuge und Technologien die ich verwende</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="category-title lang-en">Programming</h3>
+                        <h3 class="category-title lang-de" style="display:none">Programmierung</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-level-text">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-level-text">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level-text">Proficient</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level-text">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill Category 2 -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="category-title lang-en">Robotics</h3>
+                        <h3 class="category-title lang-de" style="display:none">Robotik</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">ROS</span>
+                                <span class="skill-level-text">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Ubuntu/Debian</span>
+                                <span class="skill-level-text">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Computer Vision</span>
+                                <span class="skill-level-text">Proficient</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">User Interface</span>
+                                <span class="skill-level-text">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 55%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill Category 3 -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="category-title lang-en">Web Development</h3>
+                        <h3 class="category-title lang-de" style="display:none">Webentwicklung</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-level-text">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-level-text">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level-text">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div><div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">UX-Design</span>
+                                <span class="skill-level-text">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 45%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title lang-en">Projects</h2>
+                <h2 class="section-title lang-de" style="display:none">Projekte</h2>
+                <p class="section-subtitle lang-en">A selection of my recent work</p>
+                <p class="section-subtitle lang-de" style="display:none">Eine Auswahl meiner aktuellesten Projekte</p>
+            </div>
+            
+            <!-- Im Abschnitt projects-filter, nach den bestehenden Buttons -->
+            <div class="projects-filter">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">
+                        <span class="lang-en">All</span>
+                        <span class="lang-de" style="display:none">Alle</span>
+                    </button>
+                    <button class="filter-btn" data-filter="web">
+                        <span class="lang-en">Web</span>
+                        <span class="lang-de" style="display:none">Web</span>
+                    </button>
+                    <button class="filter-btn" data-filter="robotics">
+                        <span class="lang-en">Robotics</span>
+                        <span class="lang-de" style="display:none">Robotik</span>
+                    </button>
+                    <button class="filter-btn" data-filter="others">
+                        <span class="lang-en">Others</span>
+                        <span class="lang-de" style="display:none">Others</span>
+                    </button>
+                </div>
+                <div class="filter-group">
+                    <button class="filter-btn status-filter active" data-status="all">
+                        <span class="lang-en">All</span>
+                        <span class="lang-de" style="display:none">Alle</span>
+                    </button>
+                    <button class="filter-btn status-filter" data-status="active">
+                        <span class="lang-en">Active</span>
+                        <span class="lang-de" style="display:none">Aktiv</span>
+                    </button>
+                    <button class="filter-btn status-filter" data-status="completed">
+                        <span class="lang-en">Completed</span>
+                        <span class="lang-de" style="display:none">Beendet</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="projects-grid">
+
+                <!-- Project CJT-GUI -->
+                <div class="project-card" data-category="robotics"> <!-- web | robotics | others -->
+                    <div class="project-image">
+                        <img src="res/project-cjtrobotics-gui.png">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">rqt_gui</span>
+                                <span class="tag">RViz</span>
+                                <span class="tag">ROS</span>
+                            </div>
+                        </div>
+                        <div class="project-status status-completed"> <!-- -active | -completed -->
+                            <span class="lang-en">Completed</span> <!-- Active | Completed -->
+                            <span class="lang-de" style="display:none">Abgeschlossen</span> <!-- Aktiv | Abgeschlossen -->
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title lang-en">Operator GUI CJT-Robotics</h3>
+                        <h3 class="project-title lang-de" style="display:none">Operator GUI CJT-Robotics</h3>
+                        <p class="project-description lang-en">A GUI created using rqt and RViz for the operator of the ‘Error 404’ robot from the CJT Robotics team.</p>
+                        <p class="project-description lang-de" style="display:none">Ein mithilfe von rqt und RViz erstelltes GUI für den Operator des Roboters „Error 404“ des CJT-Robotics-Teams.</p>
+                        <div class="project-links">
+                            <!-- <a href="" target="_blank" class="link-btn">
+                                <i class="fab fa-github"></i>
+                                <span class="lang-en">Code</span>
+                                <span class="lang-de" style="display:none">Code</span>
+                            </a> -->
+                            <!-- <a href="" target="_blank" class="link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span class="lang-en">View Demo</span>
+                                <span class="lang-de" style="display:none">Demo ansehen</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project YoloModel -->
+                <div class="project-card" data-category="robotics"> <!-- web | robotics | others -->
+                    <div class="project-image">
+                        <img src="res/project-yolo.png">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">YOLO11</span>
+                                <span class="tag">Python3</span>
+                            </div>
+                        </div>
+                        <div class="project-status status-active"> <!-- -active | -completed -->
+                            <span class="lang-en">Active</span> <!-- Active | Completed -->
+                            <span class="lang-de" style="display:none">Aktiv</span> <!-- Aktiv | Abgeschlossen -->
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title lang-en">Hazmat Placards Detection</h3>
+                        <h3 class="project-title lang-de" style="display:none">Gefahrzeichen Erkennung</h3>
+                        <p class="project-description lang-en">This YOLOv11 model is trained to recognise and classify various hazard signs (Hazmat Placards).</p>
+                        <p class="project-description lang-de" style="display:none">Dieses YOLOv11-Modell wird darauf trainiert, verschiedene Gefahrzeichen (Hazmat Placards) zu erkennen und zu klassifizieren.</p>
+                        <div class="project-links">
+                            <!-- <a href="" target="_blank" class="link-btn">
+                                <i class="fab fa-github"></i>
+                                <span class="lang-en">Code</span>
+                                <span class="lang-de" style="display:none">Code</span>
+                            </a> -->
+                            <!-- <a href="" target="_blank" class="link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span class="lang-en">View Demo</span>
+                                <span class="lang-de" style="display:none">Demo ansehen</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project CJT-Autonomy -->
+                <div class="project-card" data-category="robotics"> <!-- web | robotics | others -->
+                    <div class="project-image">
+                        <img src="res/project-cjtrobotics-autonomy.png">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">Python3</span>
+                                <span class="tag">C++</span>
+                                <span class="tag">ROS</span>
+                            </div>
+                        </div>
+                        <div class="project-status status-active"> <!-- -active | -completed -->
+                            <span class="lang-en">Active</span> <!-- Active | Completed -->
+                            <span class="lang-de" style="display:none">Aktiv</span> <!-- Aktiv | Abgeschlossen -->
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title lang-en">Autonomy CJT-Robotics</h3>
+                        <h3 class="project-title lang-de" style="display:none">Autonomy CJT-Robotics</h3>
+                        <p class="project-description lang-en">This programme enables the robot to calculate the path from its current position to a target position defined by the operator on the basis of a 2D map and to travel this path autonomously.</p>
+                        <p class="project-description lang-de" style="display:none">Dieses Programm ermöglicht es dem Roboter, auf Basis einer 2D-Karte den Weg von seiner aktuellen Position zu einer vom Operator festgelegten Zielposition zu berechnen und diesen autonom zurückzulegen.</p>
+                        <div class="project-links">
+                            <!-- <a href="" target="_blank" class="link-btn">
+                                <i class="fab fa-github"></i>
+                                <span class="lang-en">Code</span>
+                                <span class="lang-de" style="display:none">Code</span>
+                            </a> -->
+                            <a href="https://www.youtube.com/shorts/1lBxzUkoVpQ" target="_blank" class="link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span class="lang-en">View Demo</span>
+                                <span class="lang-de" style="display:none">Demo ansehen</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Peltrix -->
+                <div class="project-card" data-category="others"> <!-- web | robotics | others -->
+                    <div class="project-image">
+                        <img src="res/project-peltrix.png">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Paper</span>
+                                <span class="tag">Discord-JDA</span>
+                            </div>
+                        </div>
+                        <div class="project-status status-active"> <!-- -active | -completed -->
+                            <span class="lang-en">Active</span> <!-- Active | Completed -->
+                            <span class="lang-de" style="display:none">Aktiv</span> <!-- Aktiv | Abgeschlossen -->
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title lang-en">Peltrix</h3>
+                        <h3 class="project-title lang-de" style="display:none">Peltrix</h3>
+                        <p class="project-description lang-en">Peltrix offers versatile tools for server management, dynamic interactions, and variation for Minecraft servers.</p>
+                        <p class="project-description lang-de" style="display:none">Peltrix bietet vielseitige Tools für die Serververwaltung, dynamische Interaktionen und Variation für Minecraft-Server.</p>
+                        <div class="project-links">
+                            <!-- <a href="" target="_blank" class="link-btn">
+                                <i class="fab fa-github"></i>
+                                <span class="lang-en">Code</span>
+                                <span class="lang-de" style="display:none">Code</span>
+                            </a> -->
+                            <!-- <a href="" target="_blank" class="link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span class="lang-en">View Demo</span>
+                                <span class="lang-de" style="display:none">Demo ansehen</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project CJT-Robotics Website -->
+                <div class="project-card" data-category="web"> <!-- web | robotics | others -->
+                    <div class="project-image">
+                        <img src="res/project-cjtrobotics-website.jpg">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-status status-completed"> <!-- -active | -completed -->
+                            <span class="lang-en">Completed</span> <!-- Active | Completed -->
+                            <span class="lang-de" style="display:none">Abgeschlossen</span> <!-- Aktiv | Abgeschlossen -->
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title lang-en">CJT-Robotics Website</h3>
+                        <h3 class="project-title lang-de" style="display:none">CJT-Robotics Webseite</h3>
+                        <p class="project-description lang-en">The official website of the CJT-Robotics Team.</p>
+                        <p class="project-description lang-de" style="display:none">Die offizielle Website des CJT-Robotik-Teams.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/CJT-Robotics/CJT-Robotics.github.io" target="_blank" class="link-btn">
+                                <i class="fab fa-github"></i>
+                                <span class="lang-en">Code</span>
+                                <span class="lang-de" style="display:none">Code</span>
+                            </a>
+                            <a href="https://www.cjt-robotics.de" target="_blank" class="link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span class="lang-en">View Website</span>
+                                <span class="lang-de" style="display:none">Webseite besuchen</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Number Converter -->
+                <div class="project-card" data-category="others"> <!-- web | robotics | others -->
+                    <div class="project-image">
+                        <img src="res/project-number-converter.png">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                            </div>
+                        </div>
+                        <div class="project-status status-completed"> <!-- -active | -completed -->
+                            <span class="lang-en">Completed</span> <!-- Active | Completed -->
+                            <span class="lang-de" style="display:none">Abgeschlossen</span> <!-- Aktiv | Abgeschlossen -->
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title lang-en">Number Converter</h3>
+                        <h3 class="project-title lang-de" style="display:none">Zahlen Konverter</h3>
+                        <p class="project-description lang-en">A small Java programme that converts numbers and letters from different representations into others.</p>
+                        <p class="project-description lang-de" style="display:none">Ein kleines Java-Programm, dass Zahlen und Buchstaben aus verschiedenen Darstellungsweisen in andere konvertiert.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/marpelt/NumberConverter" target="_blank" class="link-btn">
+                                <i class="fab fa-github"></i>
+                                <span class="lang-en">Code</span>
+                                <span class="lang-de" style="display:none">Code</span>
+                            </a>
+                            <!-- <a href="#" target="_blank" class="link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span class="lang-en">View Demo</span>
+                                <span class="lang-de" style="display:none">Demo ansehen</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Own Website--> 
+                <div class="project-card" data-category="web"> <!-- web | robotics | others -->
+                    <div class="project-image">
+                        <img src="res/project-own-website.png">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-status status-completed"> <!-- -active | -completed -->
+                            <span class="lang-en">Completed</span> <!-- Active | Completed -->
+                            <span class="lang-de" style="display:none">Abgeschlossen</span> <!-- Aktiv | Abgeschlossen -->
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title lang-en">Portfolio Website</h3>
+                        <h3 class="project-title lang-de" style="display:none">Portfolio Webseite</h3>
+                        <p class="project-description lang-en">My own website, which serves as a portfolio.</p>
+                        <p class="project-description lang-de" style="display:none">Meine eigene Webseite, welche als Portfolio dient.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/marpelt/marpelt.github.io" target="_blank" class="link-btn">
+                                <i class="fab fa-github"></i>
+                                <span class="lang-en">Code</span>
+                                <span class="lang-de" style="display:none">Code</span>
+                            </a>
+                            <!-- <a href="#" target="_blank" class="link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span class="lang-en">View Demo</span>
+                                <span class="lang-de" style="display:none">Demo ansehen</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="section-footer">
+                <a href="https://github.com/marpelt?tab=repositories" target="_blank" class="btn btn-outline">
+                    <span class="lang-en">View All Projects</span>
+                    <span class="lang-de" style="display:none">Alle Projekte ansehen</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title lang-en">Get In Touch</h2>
+                <h2 class="section-title lang-de" style="display:none">Kontakt</h2>
+                <p class="section-subtitle lang-en">More about me and contact</p>
+                <p class="section-subtitle lang-de" style="display:none">Weiteres über mich und Kontakt</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-details">
+                            <h4>Email</h4>
+                            <span id="mail">Loading...</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="info-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/marpelt" target="_blank">github.com/marpelt</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-text">Markus Peltsarszky</span>
+                    </a>
+                    <p class="footer-text lang-en">Programming with passion</p>
+                    <p class="footer-text lang-de" style="display:none">Programmieren mit Leidenschaft</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="links-group">
+                        <h4 class="links-title lang-en">Navigation</h4>
+                        <h4 class="links-title lang-de" style="display:none">Navigation</h4>
+                        <ul class="links-list">
+                            <li><a href="#home" class="lang-en">Home</a></li>
+                            <li><a href="#home" class="lang-de" style="display:none">Start</a></li>
+                            <li><a href="#about" class="lang-en">About</a></li>
+                            <li><a href="#about" class="lang-de" style="display:none">Über Mich</a></li>
+                            <li><a href="#skills" class="lang-en">Skills</a></li>
+                            <li><a href="#skills" class="lang-de" style="display:none">Fähigkeiten</a></li>
+                            <li><a href="#projects" class="lang-en">Projects</a></li>
+                            <li><a href="#projects" class="lang-de" style="display:none">Projekte</a></li>
+                            <li><a href="#contact" class="lang-en">Contact</a></li>
+                            <li><a href="#contact" class="lang-de" style="display:none">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="links-group">
+                        <h4 class="links-title lang-en">Connect</h4>
+                        <h4 class="links-title lang-de" style="display:none">Kontakt</h4>
+                        <ul class="links-list">
+                            <li><span id="link-mail"></span></li>
+                            <li><a href="https://github.com/marpelt" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Markus Peltsarszky. All rights reserved.</p>
+                <!-- <div class="legal-links">
+                    <a href="#" class="lang-en">Privacy Policy</a>
+                    <a href="#" class="lang-de" style="display:none">Datenschutz</a>
+                    <a href="#" class="lang-en">Terms of Service</a>
+                    <a href="#" class="lang-de" style="display:none">Nutzungsbedingungen</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
