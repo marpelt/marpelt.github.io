@@ -30,7 +30,6 @@ function toggleLanguage() {
    const langText = langToggle.querySelector('.lang-text');
    const isEnglish = langText.textContent === 'EN';
 
-   // Toggle all language elements
    document.querySelectorAll('.lang-en').forEach(el => {
       el.style.display = isEnglish ? 'none' : 'block';
    });
@@ -39,10 +38,8 @@ function toggleLanguage() {
       el.style.display = isEnglish ? 'block' : 'none';
    });
 
-   // Update toggle button text
    langText.textContent = isEnglish ? 'DE' : 'EN';
 
-   // Save preference
    localStorage.setItem('language', isEnglish ? 'de' : 'en');
 }
 
@@ -126,16 +123,13 @@ function insertProtectedEmail() {
    const el = document.getElementById("mail");
    if (!el) return;
 
-   // Base64-kodierte Bestandteile
    const userEncoded = "bWFya3VzLnBlbHRzYXJzemt5";
    const domainEncoded = "Z21haWwuY29t";
 
-   // Dekodieren
    const user = atob(userEncoded);
    const domain = atob(domainEncoded);
    const email = `${user}@${domain}`;
-
-   // Neuen Link erstellen
+   
    const a = document.createElement("a");
    a.href = `mailto:${email}`;
    a.textContent = email;
@@ -150,24 +144,20 @@ function addProtectedEmail() {
    const el = document.getElementById("link-mail");
    if (!el) return;
 
-   // Base64-kodierte Bestandteile
-   const userEncoded = "bWFya3VzLnBlbHRzYXJzemt5"; // => "dein.name"
-   const domainEncoded = "Z21haWwuY29t"; // => "beispiel.de"
+   const userEncoded = "bWFya3VzLnBlbHRzYXJzemt5";
+   const domainEncoded = "Z21haWwuY29t";
 
-   // Dekodieren
    const user = atob(userEncoded);
    const domain = atob(domainEncoded);
    const email = `${user}@${domain}`;
 
-   // Verlinkung erzeugen
    const a = document.createElement("a");
    a.href = `mailto:${email}`;
    a.textContent = 'Email';
 
-   // Verzögert einfügen
    setTimeout(() => {
       el.appendChild(a);
-   }, Math.random() * 500 + 300); // 300–800 ms Verzögerung
+   }, Math.random() * 500 + 300);
 }
 
 
@@ -185,7 +175,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
          });
 
-         // Close mobile menu if open
          if (mainNav.classList.contains('active')) {
             toggleMenu();
          }
@@ -198,9 +187,8 @@ function setActiveNavLink() {
    const scrollPosition = window.scrollY;
    const scrollBottom = scrollPosition + window.innerHeight;
    const docHeight = document.documentElement.scrollHeight;
-   const tolerance = 5; // Pixel-Toleranz für exakten Treffer
+   const tolerance = 5;
 
-   // Besondere Behandlung für Home (ganz oben)
    if (scrollPosition <= tolerance) {
       document.querySelectorAll('.nav-link').forEach(link => {
          link.classList.remove('active');
@@ -211,7 +199,6 @@ function setActiveNavLink() {
       return;
    }
 
-   // Besondere Behandlung für Contact (ganz unten)
    if (scrollBottom >= docHeight - tolerance) {
       document.querySelectorAll('.nav-link').forEach(link => {
          link.classList.remove('active');
@@ -224,7 +211,7 @@ function setActiveNavLink() {
 
    // Normale Abschnittsprüfung
    document.querySelectorAll('.section').forEach(section => {
-      const sectionTop = section.offsetTop - 70; // Header-Höhe abziehen
+      const sectionTop = section.offsetTop - 70;
       const sectionHeight = section.offsetHeight;
       const sectionId = section.getAttribute('id');
       const sectionBottom = sectionTop + sectionHeight;
@@ -294,4 +281,5 @@ document.addEventListener('DOMContentLoaded', () => {
    document.querySelectorAll('.section, .project-card, .skill-category').forEach(el => {
       animateOnScroll.observe(el);
    });
+
 });
